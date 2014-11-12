@@ -1,0 +1,10 @@
+////////////////////////
+//unix 环境配置 
+
+
+1.解压src文件,生成 apue.3e文件夹
+2.cd lib ,在error.c文件中添加一行 #define MAXLINE 4096
+3.sudo cp error.c /usr/include/
+4.cd include, 在apue.h 中添加 #include "error.c"
+5.sudo cp apue.h /usr/include
+6.make源文件， sudo cp li/libapue.a /usr/lib/
